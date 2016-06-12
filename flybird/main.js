@@ -28,8 +28,9 @@ game_state.main.prototype = {
 
         // Call the 'jump' function when the spacekey is hit
         var space_key = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+        var touch = this.game.input.keyboard.addKey(Phaser.keyboard.touch);
         space_key.onDown.add(this.jump, this); 
-
+        touch.onDown.add(this.jump, this);
         // Create a group of 20 pipes
         this.pipes = game.add.group();
         this.pipes.createMultiple(20, 'pipe');  
