@@ -1,0 +1,1131 @@
+   * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    ol,
+    ul,
+    li {
+        list-style-type: none;
+    }
+    /*主体部分*/
+    
+    #content {
+        width: 100%;
+        height: 100%;
+        /* top: 20%;
+        left: 20%; */
+        overflow: hidden;
+        position: absolute;
+    }
+    
+    .content-wrap {
+        position: relative;
+    }
+    
+    .content-wrap > li {
+        color: red;
+        float: left;
+        overflow: hidden;
+        position: relative;
+    }
+    
+
+    
+    a {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+    
+    button {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .button {
+        position: absolute;
+        bottom: 0;
+    }
+
+/*背景�?*/
+
+.a_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.a_background_top{
+    width: 100%;
+    height: 71.6%;
+    background-image: url("images/background/a_background_top.png");
+    background-size: 100% 100%;
+}
+
+
+.a_background_middle{
+    width: 100%;
+    height: 13.1%;
+    background-image: url("images/background/a_background_middle.png");
+    background-size: 100% 100%;
+}
+
+.a_background_botton{
+    width: 100%;
+    height: 15.3%;
+    background-image: url("images/background/a_background_botton.png");
+    background-size: 100% 100%;
+}
+
+/*背景�?*/
+
+.b_background {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/QixiB-dark.png");
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.b_background_preload {
+    background: url("images/QixiB-bright.png") no-repeat -9999px -9999px;
+}
+
+.lamp-bright {
+   background-image: url("images/QixiB-bright.png");
+}
+
+/*背景�?*/
+
+.c_background {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.c_background_top{
+    width: 100%;
+    height: 71.6%;
+    background-image: url("images/background/c_background_top.png");
+    background-size: 100% 100%;
+}
+
+
+.c_background_middle{
+    width: 100%;
+    height: 13.1%;
+    background-image: url("images/background/c_background_middle.png");
+    background-size: 100% 100%;
+}
+
+.c_background_botton{
+    width: 100%;
+    height: 15.3%;
+    background-image: url("images/background/c_background_botton.png");
+    background-size: 100% 100%;
+}
+
+/*商店*/
+
+.shop {
+    width: 39.5%;
+    height: 35.5%;
+    position: absolute;
+    left: 29%;
+    top: 36.5%;
+}
+
+.door {
+    position: absolute;
+    width: 32%;
+    height: 100%;
+    top: 32%;
+    height: 68%;
+    overflow: hidden;
+    left: 58.5%;
+}
+
+.door-left,
+.door-right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.door-left {
+    left: 0%;
+    background: url("images/door-left.png");
+    background-size: 100% 100%;
+}
+
+.door-right {
+    left: 50%;
+    background: url("images/door-right.png");
+    background-size: 100% 100%;
+}
+
+
+.charector {
+    position: absolute;
+    left: 6%;
+    top: 55%;
+    width: 151px;
+    height: 291px;
+    background: url("images/boy.png") -0px -291px no-repeat;
+}
+
+.slowWalk {
+    animation-name: person-slow; 
+    animation-duration: 950ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, start);
+    -webkit-animation-name: person-slow; 
+    -webkit-animation-duration: 950ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps(1, start);
+    -moz-animation-name: person-slow;
+    -moz-animation-duration: 950ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: steps(1, start)
+}
+
+.slowFlolerWalk {
+   animation-name: person-floler-slow;
+   animation-duration: 950ms;
+   animation-iteration-count: infinite;
+   animation-timing-function: step-start;
+
+   -webkit-animation-name: person-floler-slow;
+   -webkit-animation-duration: 950ms;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: step-start;
+   -moz-animation-name: person-floler-slow;
+   -moz-animation-duration: 950ms;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: step-start;
+}
+
+/*人物暂停*/
+.pauseWalk {
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+}
+/*男孩转身*/
+
+.boy-rotate {
+   animation-name: boy-rotate;
+   animation-duration: 850ms;
+   animation-iteration-count: 1;
+   animation-timing-function: step-start;
+   animation-fill-mode: forwards;
+
+   -webkit-animation-name: boy-rotate;
+   -webkit-animation-duration: 850ms;
+   -webkit-animation-iteration-count: 1;
+   -webkit-animation-timing-function: step-start;
+   -webkit-animation-fill-mode: forwards;
+   -moz-animation-name: boy-rotate;
+   -moz-animation-duration: 850ms;
+   -moz-animation-iteration-count: 1;
+   -moz-animation-timing-function: step-start;
+   -moz-animation-fill-mode: forwards;
+}
+@keyframes boy-rotate
+{
+   0% {
+	   background-position: -603px -291px;
+   }
+   16.7% {
+	   background-position: -150px -0px;
+   }
+   33.4% {
+	   background-position: -453px -291px;
+   }
+   50.1% {
+	   background-position: -0px -0px;
+   }
+   66.8% {
+	   background-position: -903px -291px;
+   }
+   83.5% {
+	   background-position: -753px -291px;
+   }
+   100% {
+	   background-position: -603px -291px;
+   }
+}
+
+@-webkit-keyframes boy-rotate {
+   0% {
+	   background-position: -603px -291px;
+   }
+   16.7% {
+	   background-position: -150px -0px;
+   }
+   33.4% {
+	   background-position: -453px -291px;
+   }
+   50.1% {
+	   background-position: -0px -0px;
+   }
+   66.8% {
+	   background-position: -903px -291px;
+   }
+   83.5% {
+	   background-position: -753px -291px;
+   }
+   100% {
+	   background-position: -603px -291px;
+   }
+}
+
+@-moz-keyframes boy-rotate {
+   0% {
+	   /*background-position: -603px -291px;*/
+   }
+   16.7% {
+	   background-position: -150px -0px;
+   }
+   33.4% {
+	   background-position: -453px -291px;
+   }
+   50.1% {
+	   background-position: -0px -0px;
+   }
+   66.8% {
+	   background-position: -903px -291px;
+   }
+   83.5% {
+	   background-position: -753px -291px;
+   }
+   100% {
+	   background-position: -603px -291px;
+   }
+}
+/*普通慢�?*/
+@keyframes person-slow
+{
+    0% {
+        background-position: -0px -291px;
+    }
+    25% {
+        background-position: -602px -0px;
+    }
+    50% {
+        background-position: -302px -291px;
+    }
+    75% {
+        background-position: -151px -291px;
+    }
+    100% {
+        background-position: -0px -291px;
+    }
+}
+@-webkit-keyframes person-slow {
+    0% {
+        background-position: -0px -291px;
+    }
+    25% {
+        background-position: -602px -0px;
+    }
+    50% {
+        background-position: -302px -291px;
+    }
+    75% {
+        background-position: -151px -291px;
+    }
+    100% {
+        background-position: -0px -291px;
+    }
+}
+
+@-moz-keyframes person-slow {
+    0% {
+        background-position: -0px -291px;
+    }
+    25% {
+        background-position: -602px -0px;
+    }
+    50% {
+        background-position: -302px -291px;
+    }
+    75% {
+        background-position: -151px -291px;
+    }
+    100% {
+        background-position: -0px -291px;
+    }
+}
+
+/*带花*/
+@keyframes person-floler-slow {
+   0% {
+	   background-position: -453px -0px;
+   }
+   25% {
+	   background-position: -904px -0px;
+   }
+   50% {
+	   background-position: -451px -0px;
+   }
+   75% {
+	   background-position: -753px -0px;
+   }
+   100% {
+	   background-position: -300px -0px;
+   }
+}
+
+@-webkit-keyframes person-floler-slow {
+   0% {
+	   background-position: -453px -0px;
+   }
+   25% {
+	   background-position: -904px -0px;
+   }
+   50% {
+	   background-position: -451px -0px;
+   }
+   75% {
+	   background-position: -753px -0px;
+   }
+   100% {
+	   background-position: -300px -0px;
+   }
+}
+
+@-moz-keyframes person-floler-slow {
+   0% {
+	   background-position: -453px -0px;
+   }
+   25% {
+	   background-position: -904px -0px;
+   }
+   50% {
+	   background-position: -451px -0px;
+   }
+   75% {
+	   background-position: -753px -0px;
+   }
+   100% {
+	   background-position: -300px -0px;
+   }
+}
+/*-------- 太阳自转以及动画 --------*/
+#sun {
+	background: url("images/sun.png") no-repeat;
+	position: absolute;
+	z-index: 1;
+	top: -30px;
+	height: 201px;
+	width: 201px;
+	right: 40%;
+}
+
+.rotation {
+	animation-name: rotation;
+	animation-duration: 30s;
+
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 30s;
+	-moz-animation-name: rotation;
+	-moz-animation-duration: 30s;
+}
+@keyframes rotation {
+	0% {
+		transform: translateX(0) translateY(0);
+	}
+	100% {
+		transform: translateX(-2000px) translateY(400px);
+	}
+}
+
+@-webkit-keyframes rotation {
+	0% {
+		transform: translateX(0) translateY(0);
+	}
+	100% {
+		transform: translateX(-2000px) translateY(400px);
+	}
+}
+
+@-moz-keyframes rotation {
+	0% {
+		transform: translateX(0) translateY(0);
+	}
+	100% {
+		transform: translateX(-2000px) translateY(400px);
+	}
+}
+/*天空�?*/
+
+.cloud {
+	z-index: 2;
+	position: absolute;
+}
+
+.cloud1 {
+	width: 181px;
+	height: 101px;
+	left: -5%;
+	top: 15%;
+	background: url("images/cloud1.png");
+}
+
+
+.cloud2 {
+	width: 301px;
+	height: 140px;
+	right: -5%;
+	background: url("images/cloud2.png");
+}
+
+.cloud1Anim{
+	animation-name: smallCloud;
+	animation-duration: 30s;
+	animation-iteration: infinite;
+
+	-webkit-animation-name: smallCloud;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration: infinite;
+	-moz-animation-name: smallCloud;
+	-moz-animation-duration: 30s;
+	-moz-animation-iteration: infinite;
+}
+
+.cloud2Anim{
+	animation-name: largeCloud;
+	animation-duration: 60s;
+	animation-iteration: infinite;
+
+	-webkit-animation-name: largeCloud;
+	-webkit-animation-duration: 60s;
+	-webkit-animation-iteration: infinite;
+	-moz-animation-name: largeCloud;
+	-moz-animation-duration: 60s;
+	-moz-animation-iteration: infinite;
+}
+@keyframes smallCloud {
+	0% {
+		left: -5%;
+	}
+	100% {
+		left: 100%;
+	}
+}    
+
+@-webkit-keyframes smallCloud {
+	0% {
+		left: -5%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+@-moz-keyframes smallCloud {
+	0% {
+		left: -5%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+@keyframes largeCloud {
+	0% {
+		right: -5%;
+	}
+	100% {
+		right: 100%;
+	}
+}    
+@-webkit-keyframes largeCloud {
+	0% {
+		right: -5%;
+	}
+	100% {
+		right: 100%;
+	}
+}
+
+@-moz-keyframes largeCloud {
+	0% {
+		right: -5%;
+	}
+	100% {
+		right: 100%;
+	}
+}
+/*�?*/
+
+.bird {
+    min-width: 91px;
+    min-height: 71px;
+    top: 10%;
+    position: absolute;
+    z-index: 10;
+    right: -91px;
+    background: url("images/bird.png") -182px 0px no-repeat;
+}
+.birdFly {
+    animation-name: bird-slow;
+    animation-duration: 400ms;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: bird-slow;
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-timing-function: step-start;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: bird-slow;
+    -moz-animation-duration: 400ms;
+    -moz-animation-timing-function: step-start;
+    -moz-animation-iteration-count: infinite;
+}
+
+
+/*鸟慢�?*/
+@keyframes bird-slow {
+    0% {
+        background-position: -182px 0px;
+    }
+    50% {
+        background-position: 0px 0px;
+    }
+    75% {
+        background-position: -91px 0px;
+    }
+    100% {
+        background-position: -182px 0px;
+    }
+}
+@-webkit-keyframes bird-slow {
+    0% {
+        background-position: -182px 0px;
+    }
+    50% {
+        background-position: 0px 0px;
+    }
+    75% {
+        background-position: -91px 0px;
+    }
+    100% {
+        background-position: -182px 0px;
+    }
+}
+
+@-moz-keyframes bird-slow {
+    0% {
+        background-position: -182px 0px;
+    }
+    50% {
+        background-position: 0px 0px;
+    }
+    75% {
+        background-position: -91px 0px;
+    }
+    100% {
+        background-position: -182px 0px;
+    }
+}
+
+
+
+
+/*小女�?*/
+
+.girl {
+    background: url("images/girl.png") -755px -0px no-repeat;
+    position: absolute;
+    right: 40%;
+    top: 37%;
+    width: 151px;
+    height: 291px;
+}
+.girl-rotate {
+    animation-name: girl-rotate;
+    animation-duration: 850ms;
+    animation-iteration-count: 1;
+    animation-timing-function: step-start;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: girl-rotate;
+    -webkit-animation-duration: 850ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: step-start;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: girl-rotate;
+    -moz-animation-duration: 850ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: step-start;
+    -moz-animation-fill-mode: forwards;
+}
+@keyframes girl-rotate {
+    0% {
+        background-position: -604px -0px;
+    }
+    16.7% {
+        background-position: -151px -0px;
+    }
+    33.4% {
+        background-position: -906px -0px;
+    }
+    50.1% {
+        background-position: -0px -0px;
+    }
+    66.8% {
+        background-position: -302px -0px;
+    }
+    83.5% {
+        background-position: -453px -0px;
+    }
+    100% {
+        background-position: -604px -0px;
+    }
+}
+
+@-webkit-keyframes girl-rotate {
+    0% {
+        background-position: -604px -0px;
+    }
+    16.7% {
+        background-position: -151px -0px;
+    }
+    33.4% {
+        background-position: -906px -0px;
+    }
+    50.1% {
+        background-position: -0px -0px;
+    }
+    66.8% {
+        background-position: -302px -0px;
+    }
+    83.5% {
+        background-position: -453px -0px;
+    }
+    100% {
+        background-position: -604px -0px;
+    }
+}
+
+@-moz-keyframes girl-rotate {
+    0% {
+        /*background-position: -604px -0px;*/
+    }
+    16.7% {
+        background-position: -151px -0px;
+    }
+    33.4% {
+        background-position: -906px -0px;
+    }
+    50.1% {
+        background-position: -0px -0px;
+    }
+    66.8% {
+        background-position: -302px -0px;
+    }
+    83.5% {
+        background-position: -453px -0px;
+    }
+    100% {
+        background-position: -604px -0px;
+    }
+}
+/*�?*/
+
+.bridge-bottom {
+    position: absolute;
+    width: 41%;
+    height: 24%;
+    left: 29.5%;
+    top: 76%;
+    overflow: hidden;
+    /*    -webkit-transform:perspective(8px) rotateX(.8deg); */
+}
+/*波浪水布局*/
+
+.water {
+    width: 100%;
+    height: 100%;
+}
+
+.water_1,
+.water_2,
+.water_3,
+.water_4 {
+    width: 100%;
+    position: absolute;
+    height: 50%;
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 40s;
+    -webkit-animation-direction: alternate;
+    -webkit-anination-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: shake;
+    -moz-animation-duration: 40s;
+    -moz-animation-direction: alternate;
+    -moz-anination-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: shake;
+    animation-duration: 40s;
+    animation-direction: alternate;
+    anination-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.water_1 {
+    width: 131px;
+    height: 15px;
+    top: 13%;
+    left: 35%;
+    background: url("images/water.png") -261px -0px no-repeat;
+}
+
+.water_2 {
+    width: 161px;
+    height: 9px;
+    top: 30%;
+    left: 45%;
+    background: url("images/water.png") -693px -0px no-repeat;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+.water_3 {
+    width: 261px;
+    height: 29px;
+    top: 50%;
+    left: 15%;
+    background: url("images/water.png") -0px -0px no-repeat;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.water_4 {
+    width: 301px;
+    height: 12px;
+    top: 75%;
+    left: 30%;
+    background: url("images/water.png") -392px -0px no-repeat;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+	animation-delay: 3s;
+}
+@keyframes shake {
+    0%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-30px, 0px, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(30px, 0px, 0);
+    }
+}
+@-webkit-keyframes shake {
+    0%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-30px, 0px, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(30px, 0px, 0);
+    }
+}
+
+@-moz-keyframes shake {
+    0%, 100% {
+        -moz-transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -moz-transform: translate3d(-30px, 0px, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -moz-transform: translate3d(30px, 0px, 0);
+    }
+}
+
+
+
+/*星星*/
+
+.stars {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.stars > li {
+    position: absolute;
+    width: 30px;
+    height: 31px;
+    background-image: url("images/stars.png");
+    -webkit-animation-name: flash;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-name: flash;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+
+    animation-name: flash;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.stars1 {
+    top: 20%;
+    left: 30%;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+	animation-duration: 5s;
+}
+
+.stars2 {
+    top: 15%;
+    left: 20%;
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+	animation-duration: 20s;
+}
+
+.stars3 {
+    top: 25%;
+    left: 85%;
+    -webkit-animation-duration: 15s;
+    -moz-animation-duration: 15s;
+	animation-duration: 15s;
+}
+
+.stars4 {
+    top: 30%;
+    left: 70%;
+    -webkit-animation-duration: 25s;
+    -moz-animation-duration: 25s;
+	animation-duration: 25s;
+}
+
+.stars5 {
+    top: 25%;
+    left: 20%;
+    -webkit-animation-duration: 30s;
+    -moz-animation-duration: 30s;
+	animation-duration: 30s;
+}
+
+.stars6 {
+    top: 10%;
+    left: 65%;
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+	animation-duration: 10s;
+}
+@keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+/*文字效果*/
+.logo {
+  background-image: url("images/logo.png");
+  display: none;
+  height: 50px;
+  left: 50%;
+  margin-left: -180px;
+  position: absolute;
+  top: 30px;
+  width: 360px;
+  z-index: 999999;
+  background-size: 100%;
+}
+
+.logolightSpeedIn {
+    display: block;
+    -webkit-animation-name: lightSpeedIn;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1s;
+    -moz-animation-name: lightSpeedIn;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 1s;
+
+    animation-name: lightSpeedIn;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+}
+
+@keyframes lightSpeedIn {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: skewX(20deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: skewX(-5deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: none;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes lightSpeedIn {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: skewX(20deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: skewX(-5deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: none;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes lightSpeedIn {
+    0% {
+        -moz-transform: translate3d(100%, 0, 0) skewX(-30deg);
+        opacity: 0;
+    }
+    60% {
+        -moz-transform: skewX(20deg);
+        opacity: 1;
+    }
+    80% {
+        -moz-transform: skewX(-5deg);
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: none;
+        opacity: 1;
+    }
+}
+
+.logoshake {
+    -webkit-animation-name: logoshake;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-name: logoshake;
+    -moz-animation-duration: 0.5s;
+
+    animation-name: logoshake;
+    animation-duration: 0.5s;
+}
+@keyframes logoshake {
+    0%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+    }
+}
+
+@-webkit-keyframes logoshake {
+    0%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+    }
+}
+
+@-moz-keyframes logoshake {
+    0%, 100% {
+        -moz-transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -moz-transform: translate3d(-5px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -moz-transform: translate3d(10px, 0, 0);
+    }
+}
