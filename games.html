@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>选个游戏玩吧</title>
+	</head>
+	<style type="text/css">
+		body {
+			background: #eb9fac;
+		}
+
+		h3 {
+			color: red;
+			text-align: center;
+			font: bold 18px/1.5 "microsoft yahei";
+		}
+        img {
+            width:200px;
+            height: auto;
+
+        }
+
+		.card-container {
+			position: relative;
+			width: 1100px;
+			margin: 0 auto;
+		}
+
+		.card {
+			margin-right: 15px;
+			width: 200px;
+			height: 380px;
+			float: left;
+		}
+
+		.card .font,
+		.card .back {
+			position: absolute;
+			transition: transform 0.4s;
+			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+		}
+
+		.card .font {
+			-webkit-transform: rotateY( 0deg);
+			-moz-transform: rotateY( 0deg);
+			-o-transform: rotateY( 0deg);
+			transform: rotateY( 0deg);
+		}
+
+		.card .back {
+			-webkit-transform: rotateY( -180deg);
+			-moz-transform: rotateY( -180deg);
+			-o-transform: rotateY( -180deg);
+			transform: rotateY( -180deg);
+		}
+
+		.card:hover .font {
+			-webkit-transform: rotateY( 180deg);
+			-moz-transform: rotateY( 180deg);
+			-o-transform: rotateY( 180deg);
+			transform: rotateY( 180deg);
+		}
+
+		.card:hover .back {
+			-webkit-transform: rotateY( 0deg);
+			-moz-transform: rotateY( 0deg);
+			-o-transform: rotateY( 0deg);
+			transform: rotateY( 0deg);
+		}
+
+		.card2,
+		.card4 {
+			margin-top: 20px;
+		}
+	</style>
+
+	<body>
+    	<embed src="bobi.mp3" autostart="true" loop="true" width="0" height="0"></embed>
+		<h3>鼠标移动到卡片上试试</h3>
+		<div class="card-container">
+			<div class="card card1">
+                <a href="#" class="font"><img src="img/turnImg/3.jpg" /></a>
+				<a href="games/mario/index.html" onclick="alert('看你敢不敢确定！！！')" class="back"><img src="img/turnImg/mario.jpg" /></a>
+
+
+				<!--<a href="#" class="back"><img src="http://9yin.woniu.com/static/web201588/images/card6-back.png" /></a>-->
+				<!--<a href="#" class="font"><img src="http://9yin.woniu.com/static/web201588/images/card6.png" /></a>-->
+			</div>
+			<div class="card card2">
+				<a href="#" class="font"><img src="img/turnImg/2.jpg" /></a>
+				<a href="games/pacman/index.html" onclick="alert('您的网络已断开，请检查本地连接！')" class="back"><img src="img/turnImg/pacman.jpg" /></a>
+			</div>
+			<div class="card card3">
+                <a href="#" class="font"><img src="img/turnImg/10.jpg" /></a>
+				<a href="#" onclick="alert('很不幸，这里没有游戏！让你玩！！！')" class="back"><img src="img/turnImg/weinixidong.gif" /></a>
+
+			</div>
+			<div class="card card4">
+                <a href="#" class="font"><img src="img/turnImg/1.jpg" /></a>
+				<a href="games/wuziqi/index.html" onclick="alert('点击确定，将会下载一个病毒软件！！！')" class="back"><img src="img/turnImg/gomoku.jpg" /></a>
+
+			</div>
+			<div class="card card5">
+                <a href="#" class="font"><img src="img/turnImg/11.jpg" /></a>
+				<a href="#" onclick="alert('很不幸，这里没有游戏！让你玩！！！')" class="back"><img src="img/turnImg/buzhudong.gif" /></a>
+			</div>
+
+		</div>
+
+
+	</body>
+
+</html>
